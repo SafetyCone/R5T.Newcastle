@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Coventry\source\R5T.Coventry\R5T.Coventry.csproj" />
     <ProjectReference Include="..\..\..\R5T.Derby\source\R5T.Derby\R5T.Derby.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Lincoln.Base\source\R5T.Lincoln.Base\R5T.Lincoln.Base.csproj" />
     <ProjectReference Include="..\..\..\R5T.Venetia\source\R5T.Venetia\R5T.Venetia.csproj" />
   </ItemGroup>
 </Project>
