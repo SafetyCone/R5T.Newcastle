@@ -6,7 +6,7 @@ using R5T.Derby;
 using RichmondApplicationBuilder = R5T.Richmond.ApplicationBuilder;
 
 
-namespace R5T.Newcastle.Code.Classes
+namespace R5T.Newcastle
 {
     public static class DesignTimeDbContextFactoryBuilder
     {
