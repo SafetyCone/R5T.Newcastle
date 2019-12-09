@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 
 using R5T.Coventry;
+using R5T.Lincoln;
 using R5T.Venetia;
 using R5T.Venetia.Extensions;
 
