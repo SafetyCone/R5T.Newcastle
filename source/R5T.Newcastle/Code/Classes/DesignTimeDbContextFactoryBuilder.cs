@@ -1,28 +1,23 @@
 ﻿using System;
 
-using R5T.Coventry;
 using R5T.Derby;
+using R5T.Richmond;
 
 using RichmondApplicationBuilder = R5T.Richmond.ApplicationBuilder;
 
 
 namespace R5T.Newcastle
 {
-    public static class DesignTimeDbContextFactoryBuilder
+    public class DesignTimeDbContextFactoryBuilder : RichmondApplicationBuilder
     {
-        public static IServiceProvider UseStartup<TStartup, TConfigurationStartup>()
-            where TStartup: ApplicationStartupBase, IDesignTimeDbContextFactoryStartup
-            where TConfigurationStartup: ApplicationConfigurationStartup
+        #region Static
+
+        public static new DesignTimeDbContextFactoryBuilder New()
         {
-            var serviceProvider = RichmondApplicationBuilder.UseStartup<TStartup, TConfigurationStartup>();
-            return serviceProvider;
+            var designTimeDbContextFactoryBuilder = new DesignTimeDbContextFactoryBuilder();
+            return designTimeDbContextFactoryBuilder;
         }
 
-        public static IServiceProvider UseStartup<TStartup>()
-            where TStartup : ApplicationStartupBase, IDesignTimeDbContextFactoryStartup
-        {
-            var serviceProvider = RichmondApplicationBuilder.UseStartup<TStartup, ApplicationConfigurationStartup>();
-            return serviceProvider;
-        }
+        #endregion
     }
 }
